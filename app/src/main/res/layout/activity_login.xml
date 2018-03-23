@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#6003c4"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp"
+
+    tools:context="in.ac.rungta.startaab.LoginActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:fontFamily="cursive"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:text="Via Server"
+            android:textColor="#ffffff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Via Local DB"
+            android:textColor="#ffffff" />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email ID"
+        android:background="#ffffff"
+        android:padding="8dp"
+        android:inputType="textEmailAddress"
+        android:layout_margin="5dp"
+        android:id="@+id/et_email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:background="#ffffff"
+        android:layout_margin="5dp"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:id="@+id/et_password"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#181818"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:text="Sign IN"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:id="@+id/btn_signin"
+        android:textColor="#f5f0fa"/>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#f9f9f9"
+        android:padding="10dp"
+        android:text="Sign Up"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="#6003c4" />
+</LinearLayout>
